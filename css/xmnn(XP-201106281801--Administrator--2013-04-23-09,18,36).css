@@ -1,0 +1,168 @@
+@charset "utf-8";
+/*-------------------css reset--------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, 
+h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, 
+big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, table, caption, tbody, tfoot, 
+thead, tr, th, td { 
+margin: 0; 
+padding: 0; 
+border: 0; 
+outline: 0; 
+font-weight:normal; 
+font-style: inherit; 
+font-size: 100%; 
+font-family: inherit; 
+vertical-align: baseline; 
+} 
+:focus { 
+outline: 0; 
+} 
+table { 
+border-collapse: collapse; 
+border-spacing: 0; 
+} 
+caption, th, td { 
+text-align: left; 
+font-weight: normal; 
+} 
+a img, iframe { 
+border: none; 
+}
+ul,ol{ 
+list-style: none; 
+}
+input, textarea, select, button { 
+font-size: 100%; 
+font-family: inherit; 
+} 
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+/*------------------- 视觉隐藏--------------------------*/
+.vh { 
+	border: 0; 
+	clip: rect(0 0 0 0); 
+	height: 1px; 
+	margin: -1px; 
+	overflow: hidden; 
+	padding: 0; 
+	position: absolute; 
+	width: 1px; 
+}
+/*------------------- 图片替换--------------------------*/
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+/*-------------------公共--------------------------*/
+body{font-size:14px; line-height:1; font-family:'宋体',Arial, Helvetica, sans-serif;color:#333;}
+a{text-decoration:none;color:#333;}
+a:hover{color:red;}
+.fl{float:left; display:inline;}
+.fr{float:right;display:inline;}
+strong,h1,h2,h3,h4,dt,h1 a,h2 a,h3 a,h4 a{font-weight:bold;}
+.h{position:relative;}
+.hr{position:absolute; right:0; top:2px;}
+.tc{text-align:center;}
+.tr{text-align:right;}
+.fl,.li-fl li{float:left; display:inline;}
+/*-------------------文章模块--------------------------*/
+.article h3{ text-align:center;}
+.article p {text-indent:2em; line-height:1.5;}
+/*-------------------新闻列表模块--------------------------*/
+.list li{line-height:1.5;}
+.list2 li{float:left; display:inline; width:50%; line-height:1.5;}
+/*-------------------图片列表模块--------------------------*/
+.img dl{float:left;display:inline;}
+.img dd{*font-size: 0;}
+.img dt{text-align:center; margin-top: 5px;}
+/*-------------------选项卡模块--------------------------*/
+.tab .h li{float:left; display:inline;}
+.tab .b{display:none;}
+.tab .active{display:block;}
+/*-------------------数字幻灯模块--------------------------*/
+.slider{ position:relative; height:250px; overflow:hidden}
+.slider .b{ padding:0;}
+.slider .f{position:absolute; right:5px; bottom:5px; z-index:999}
+.slider .f a{background:#000; display:inline-block; padding:4px 4px; color:#fff}
+.slider .f .activeSlide{background:#FF6600;}
+/*-------------------布局--------------------------*/
+.w{width: 960px; margin: 0 auto;}
+body{background:url(../img/body.jpg) no-repeat center 33px #FED2F0;}
+#h{height:337px;}
+#b .r1 .c1{width:282px; margin-right:10px;}
+#b .r1 .c2{width:333px; margin-right:10px;}
+#b .r1 .c3{width:307px;}
+#b .r1{background:url(../img/b-r1.png) no-repeat 294px 8px #FFEDED; padding:6px;}
+#b .r{margin-bottom:14px;}
+/*-------------------公共ma--------------------------*/
+.ma{border:1px solid #DEDBDC; border-radius:5px;}
+.ma .h{background:url(../img/ma-h.png) repeat-x; height:61px; line-height:61px;}
+.ma h2{background:url(../img/ma-h2.png) no-repeat 5px top; _background:url(../img/ie6/ma-h2.gif) no-repeat 5px top; padding-left:52px; font-size:24px; font-family:'微软雅黑'; font-weight:normal; font-style:italic;}
+.ma .h span{font-size:28px;}
+/*-------------------活动内容m2--------------------------*/
+.m2 .br1{padding-top:34px; text-align:center;}
+.m2 .br2{padding-top:35px;}
+.m2 p{line-height:20px;}
+.m2 span{ font-weight:bold;}
+/*-------------------活动内容m4--------------------------*/
+.m4 h2{color:#4B3BFD;}
+.m4 .b{background:#D8A2FF url(../img/m4-b.png) right top no-repeat; padding:14px 24px;}
+.m4 p{line-height:26px;}
+.m4 .l1{font-weight:bold;}
+.m4 .l2{text-indent:2em;}
+.m4 .l3{width:589px;}
+/*-------------------门票获取m5--------------------------*/
+.m5 h2{color:#FC365D;}
+.m5 .b{padding:22px 18px; background:#F7EDFE;}
+.m5 p{line-height:22px; color:#6B63F3;}
+/*-------------------报名表m6--------------------------*/
+.m6 h2{color:#5C51FA;}
+.m6 .b{background:#D394FF; padding:16px 30px 40px; font-family:'微软雅黑'; font-size:16px; color:#333232;}
+.m6 .br1 div{padding:4px 0;}
+#name,
+#jg{width:95px;}
+#old{width:58px;}
+#sg{width:66px;}
+#xl{width:141px;}
+#zy,
+#ysr{width:355px;}
+#tel{width:591px;}
+.m6 .l1{padding-left:50px;}
+#QQ{width:363px;}
+#id{width:342px;}
+.m6 .l2 p{padding-left:453px;}
+#zwms,
+#yq{width:892px; height:106px; margin-bottom:24px; font-size:12px;}
+.m6 .br1 span{margin-left:35px;}
+.m6 .br2{margin-bottom:30px;}
+.m6 .br2 .bc1{width:248px;}
+.m6 .br2 .bc2{width:639px;}
+.m6 .bc2 p{color:#FDFFFD; text-indent:2em; line-height:26px; padding-top:30px;}
+.m6 .br3{margin-bottom:35px;}
+.m6 .br4{text-align:center;}
+#btn{background:url(../img/m6-btn.png) no-repeat; width:160px; height:47px; border:none; line-height:47px; cursor:pointer; font-size:23px; color:#6C2F98; font-family:'宋体'; font-weight:bold;}
+/*-------------------支持单位m7--------------------------*/
+.m7{background:url(../img/m7.png) no-repeat #fff; border:6px solid #8981FA;}
+.m7 .b{padding-left:38px;}
+.m7 .b a{display:inline-block;}
